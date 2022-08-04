@@ -71,12 +71,31 @@ margin-bottom: 50px;
     text-align: center;
 }
 .userName__textContainer{
-width: 600px
+    width: 1000px;
 
 
 }
 #userName__text{
     text-align: center;
     font-size: 5em;
-    line-break: loose;
+    line-break: auto;
+    overflow: hidden;
+}
+
+/* Confirm User */
+.confirmUser__container{
+    opacity: 0;
+    position: absolute;
+    top: 500px;
+    transition: opacity linear .5s;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.confirmUser__btn{
+    display: flex;
+    gap:50px
 }
