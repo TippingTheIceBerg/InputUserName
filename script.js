@@ -11,6 +11,12 @@ userNameInput.addEventListener("input",()=>{
 let confirmUserName = document.querySelector(".confirmUser__yes")
 let cancelUserName = document.querySelector(".confirmUser__no")
 
+
+
 confirmUserName.addEventListener("click", () =>{
+window.localStorage.setItem('userName', `${userNameInput.value}`);
 mainUserNameContainer.style.cssText = "transform:translate3d(-500px,0px,0px); opacity:0";
+document.title = `Welcome ${userNameInput.value}`;
 })
+
+window.localStorage.getItem('username') != ""? document.title = `Welcome ${userNameInput.value}`: document.title = "Welcome User";
