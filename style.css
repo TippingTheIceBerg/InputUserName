@@ -88,7 +88,7 @@ margin-bottom: 50px;
 .confirmUser__container{
     opacity: 0;
     position: absolute;
-    top: 400px;
+    top: 340px;
     transition: opacity linear .5s;
     font-size: 3em;
     display: flex;
